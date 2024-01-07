@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujtuba</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 1vh;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2vh;
+        }
+
+        .picture-container {
+            width: 80%;
+            margin: 2vh 0;
+            overflow: hidden;
+            position: relative;
+
+        }
+
+        .pictures{
+            height: 300px;
+            width: 300px;
+        }
+        .text-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;    
+            color: rgb(0, 0, 0);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1vh;
+            text-align: center;
+        }
+        .right_text {
+            text-align: right;
+            padding-right: 1vh;
+        }
+        .right_text p {
+            margin-right: 1vh !important;
+        }
+        .left_text {
+            text-align: left;
+        }
+        .left_text p{
+            margin-left: 1vh !important;
+        }
+        .right_image{
+            float: right;
+        }
+        .button{
+            font-weight: bold;
+        }
+        .gallery-button {
+            background-color: rgba(0, 0, 0, 0.377);
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hola!/bonjour/Ciao/Marhaba/안녕하세요</h1>
+    </header>
+
+    <main>
+        <div class="gallery-button">
+           <p>Visit my <a href="./gallery.html" class="button">Gallery</a>!</p>
+        </div>
+        <div class="picture-container">
+            <img src="./defualt.jpeg" alt="Baby me" class="pictures">
+            <div class="text-overlay right_text">
+                <p>This is me when I was small</p> <!--use <br> for long sentences-->
+            </div>
+        </div>
+
+        <div class="picture-container">
+            <img src="./defualt.jpeg" alt="Not so Adult me" class="pictures right_image">
+            <div class="text-overlay left_text">
+                <p>This is me who I hope to be</p>
+            </div>
+        </div>
+        <div class="picture-container">
+            <img src="./defualt.jpeg" alt="Baby me" class="pictures">
+            <div class="text-overlay right_text">
+                <p>This is me when I was small</p> <!--use <br> for long sentences-->
+            </div>
+        </div>
+        <!-- Add more picture-container elements as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; Adios/Do widzenia/안녕히 가세요/Hejdå/Näkemiin</p>
+    </footer>
+</body>
+</html>
